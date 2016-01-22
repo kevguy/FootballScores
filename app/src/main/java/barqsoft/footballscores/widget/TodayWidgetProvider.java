@@ -33,7 +33,7 @@ import barqsoft.footballscores.service.myFetchService;
 
 
 /**
- * Provider for a widget showing today's weather
+ * Provider for a horizontally expandable widget showing today's weather
  *
  * Delegates widget updating to {@link TodayWidgetIntentService} to ensure that
  * data retrieval is done on a background thread.
