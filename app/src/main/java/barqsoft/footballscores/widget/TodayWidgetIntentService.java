@@ -43,7 +43,7 @@ import barqsoft.footballscores.widget.TodayWidgetProvider;
  */
 public class TodayWidgetIntentService extends IntentService {
 
-    private String[] fragmentdate = new String[1];
+    private String[] mRealDate = new String[1];
 
     private static final String[] SCORE_COLUMNS = {
             DatabaseContract.scores_table.MATCH_ID,
@@ -80,7 +80,7 @@ public class TodayWidgetIntentService extends IntentService {
 
     public void setFragmentDate(String date)
     {
-        fragmentdate[0] = date;
+        mRealDate[0] = date;
     }
 
 
@@ -93,7 +93,7 @@ public class TodayWidgetIntentService extends IntentService {
 
         // Get tomorrow's data from the ContentProvider
         Uri scoreForTomorrowUri = DatabaseContract.scores_table.buildScoreWithDate();
-        Cursor data = getContentResolver().query(scoreForTomorrowUri, SCORE_COLUMNS, null, fragmentdate, null);
+        Cursor data = getContentResolver().query(scoreForTomorrowUri, SCORE_COLUMNS, null, mRealDate, null);
         if (data == null) {
             return;
         }
