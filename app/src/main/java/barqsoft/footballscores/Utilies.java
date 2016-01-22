@@ -96,15 +96,42 @@ public class Utilies
         { //This is the set of icons that are currently in the app. Feel free to find and add more
             //as you go.
             case "Arsenal London FC" : return R.drawable.arsenal;
-            case "Manchester United FC" : return R.drawable.manchester_united;
-            case "Swansea City" : return R.drawable.swansea_city_afc;
-            case "Leicester City" : return R.drawable.leicester_city_fc_hd_logo;
+
+            case "Aston Villa FC" : return R.drawable.aston_villa;
+            // Not sure if it's right name
+            case "Burney FC" : return R.drawable.burney_fc_hd_logo;
+            // Not sure if it's right name
+            case "Chelsea FC" : return R.drawable.chelsea;
+            // Not sure if it's right name
+            case "Crystal Palace FC" : return R.drawable.crystal_palace_fc;
+
             case "Everton FC" : return R.drawable.everton_fc_logo1;
-            case "West Ham United FC" : return R.drawable.west_ham;
+
+            // Not sure if it's right name
+            case "Hull City AFC" : return R.drawable.hull_city_afc_hd_logo;
+
+            case "Leicester City FC" : return R.drawable.leicester_city_fc_hd_logo;
+            case "Liverpool FC" : return R.drawable.liverpool;
+
+            // Not sure if it's right name
+            case "Manchester City FC" : return R.drawable.manchester_city;
+
+            case "Manchester United FC" : return R.drawable.manchester_united;
+
+            // Not sure if it's right name
+            case "Newcastle FC" : return R.drawable.newcastle_united;
+
+            // Not sure if it's right name
+            case "Queens Park Rangers" : return R.drawable.queens_park_rangers_hd_logo;
+
+            case "Southampton FC" : return R.drawable.southampton_fc;
+            case "Stoke City FC" : return R.drawable.stoke_city;
+            case "Sunderland AFC" : return R.drawable.sunderland;
+            case "Swansea City" : return R.drawable.swansea_city_afc;
             case "Tottenham Hotspur FC" : return R.drawable.tottenham_hotspur;
             case "West Bromwich Albion" : return R.drawable.west_bromwich_albion_hd_logo;
-            case "Sunderland AFC" : return R.drawable.sunderland;
-            case "Stoke City FC" : return R.drawable.stoke_city;
+            case "West Ham United FC" : return R.drawable.west_ham;
+
             default: return R.drawable.no_icon;
         }
     }
