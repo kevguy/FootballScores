@@ -1,5 +1,6 @@
 package barqsoft.footballscores;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -46,9 +47,21 @@ public class scoresAdapter extends CursorAdapter
     {
         final ViewHolder mHolder = (ViewHolder) view.getTag();
         mHolder.home_name.setText(cursor.getString(COL_HOME));
+        mHolder.home_name.setContentDescription("Home Team: " + cursor.getString(COL_HOME));
+
         mHolder.away_name.setText(cursor.getString(COL_AWAY));
+        mHolder.away_name.setContentDescription("Away Team: " + cursor.getString(COL_AWAY));
+
         mHolder.date.setText(cursor.getString(COL_MATCHTIME));
-        mHolder.score.setText(Utilies.getScores(cursor.getInt(COL_HOME_GOALS),cursor.getInt(COL_AWAY_GOALS)));
+        String[] parts = cursor.getString(COL_MATCHTIME).split(":");
+        mHolder.date.setContentDescription("Match Time: " + parts[0] + parts[1]);
+
+        mHolder.score.setText(Utilies.getScores(cursor.getInt(COL_HOME_GOALS), cursor.getInt(COL_AWAY_GOALS)));
+        if (cursor.getInt(COL_HOME_GOALS) < 0 || cursor.getInt(COL_AWAY_GOALS) < 0){
+            mHolder.score.setContentDescription("Score: Not available");
+        } else {
+            mHolder.score.setContentDescription("Score: " + Integer.toString(cursor.getInt(COL_HOME_GOALS)) + "to" + Integer.toString(cursor.getInt(COL_AWAY_GOALS)));
+        }
         mHolder.match_id = cursor.getDouble(COL_ID);
         mHolder.home_crest.setImageResource(Utilies.getTeamCrestByTeamName(
                 cursor.getString(COL_HOME)));
@@ -73,6 +86,7 @@ public class scoresAdapter extends CursorAdapter
             TextView league = (TextView) v.findViewById(R.id.league_textview);
             league.setText(Utilies.getLeague(cursor.getInt(COL_LEAGUE)));
             Button share_button = (Button) v.findViewById(R.id.share_button);
+            share_button.setContentDescription("Click this to share the match you like");
             share_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v)
