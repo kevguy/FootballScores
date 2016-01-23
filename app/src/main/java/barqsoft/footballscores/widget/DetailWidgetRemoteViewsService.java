@@ -52,24 +52,6 @@ public class DetailWidgetRemoteViewsService extends RemoteViewsService {
     private static final int INDEX_AWAY_GOALS = 7;
     private static final int INDEX_MATCH_DAY = 8;
 
-    /*
-    private static final String[] FORECAST_COLUMNS = {
-            WeatherContract.WeatherEntry.TABLE_NAME + "." + WeatherContract.WeatherEntry._ID,
-            WeatherContract.WeatherEntry.COLUMN_DATE,
-            WeatherContract.WeatherEntry.COLUMN_WEATHER_ID,
-            WeatherContract.WeatherEntry.COLUMN_SHORT_DESC,
-            WeatherContract.WeatherEntry.COLUMN_MAX_TEMP,
-            WeatherContract.WeatherEntry.COLUMN_MIN_TEMP
-    };
-    // these indices must match the projection
-    static final int INDEX_WEATHER_ID = 0;
-    static final int INDEX_WEATHER_DATE = 1;
-    static final int INDEX_WEATHER_CONDITION_ID = 2;
-    static final int INDEX_WEATHER_DESC = 3;
-    static final int INDEX_WEATHER_MAX_TEMP = 4;
-    static final int INDEX_WEATHER_MIN_TEMP = 5;
-    */
-
     @Override
     public RemoteViewsFactory onGetViewFactory(Intent intent) {
         return new RemoteViewsFactory() {
@@ -95,17 +77,11 @@ public class DetailWidgetRemoteViewsService extends RemoteViewsService {
                 // data. Therefore we need to clear (and finally restore) the calling identity so
                 // that calls use our process and permission
                 final long identityToken = Binder.clearCallingIdentity();
-                /*
-                String location = Utility.getPreferredLocation(DetailWidgetRemoteViewsService.this);
-
-                Uri weatherForLocationUri = WeatherContract.WeatherEntry
-                        .buildWeatherLocationWithStartDate(location, System.currentTimeMillis());
-                */
                 // Get tomorrow's data from the ContentProvider
                 Uri scoreForTomorrowUri = DatabaseContract.scores_table.buildScoreWithDate();
                 int today = 0;
                 // FInd tomorrow's date
-                Date orgfragmentdate = new Date(System.currentTimeMillis()+((today+1)*86400000));
+                Date orgfragmentdate = new Date(System.currentTimeMillis()+((today+0)*86400000));
                 SimpleDateFormat mformat = new SimpleDateFormat("yyyy-MM-dd");
                 setFragmentDate(mformat.format(orgfragmentdate));
                 data = getContentResolver().query(scoreForTomorrowUri,
@@ -113,13 +89,6 @@ public class DetailWidgetRemoteViewsService extends RemoteViewsService {
                         null,
                         mRealDate,
                         DatabaseContract.scores_table.TIME_COL + " ASC");
-                /*
-                data = getContentResolver().query(weatherForLocationUri,
-                        FORECAST_COLUMNS,
-                        null,
-                        null,
-                        WeatherContract.WeatherEntry.COLUMN_DATE + " ASC");
-                */
                 Binder.restoreCallingIdentity(identityToken);
             }
 
@@ -145,32 +114,17 @@ public class DetailWidgetRemoteViewsService extends RemoteViewsService {
                 RemoteViews views = new RemoteViews(getPackageName(),
                         R.layout.widget_detail_list_item);
                 int weatherId = data.getInt(INDEX_MATCH_ID);
-                /*
-                int weatherArtResourceId = Utility.getIconResourceForWeatherCondition(weatherId);
-                Bitmap weatherArtImage = null;
-                if ( !Utility.usingLocalGraphics(DetailWidgetRemoteViewsService.this) ) {
-                    String weatherArtResourceUrl = Utility.getArtUrlForWeatherCondition(
-                            DetailWidgetRemoteViewsService.this, weatherId);
-                    try {
-                        weatherArtImage = Glide.with(DetailWidgetRemoteViewsService.this)
-                                .load(weatherArtResourceUrl)
-                                .asBitmap()
-                                .error(weatherArtResourceId)
-                                .into(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL).get();
-                    } catch (InterruptedException | ExecutionException e) {
-                        Log.e(LOG_TAG, "Error retrieving large icon from " + weatherArtResourceUrl, e);
-                    }
-                }
-                */
 
-                String description = "fuck " + Utilies.getLeague(data.getInt(INDEX_LEAGUE));
-                long dateInMillis = data.getLong(INDEX_DATE);
-                String formattedDate = "fuck" + mRealDate.toString();
+                String description = Utilies.getLeague(data.getInt(INDEX_LEAGUE));
+                String dateInMillis = data.getString(INDEX_TIME);
+                String formattedDate = dateInMillis;
                 //double maxTemp = data.getDouble(INDEX_HOME);
                 //double minTemp = data.getDouble(INDEX_AWAY);
                 String formattedMaxTemperature = data.getString(INDEX_HOME);
                 String formattedMinTemperature = data.getString(INDEX_AWAY);
-                views.setImageViewResource(R.id.widget_icon, R.drawable.liverpool);
+                views.setImageViewResource(R.id.home_icon, Utilies.getTeamCrestByTeamName(data.getString(INDEX_HOME)));
+                views.setImageViewResource(R.id.away_icon, Utilies.getTeamCrestByTeamName(data.getString(INDEX_AWAY)));
+
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
                     setRemoteContentDescription(views, description);
                 }
