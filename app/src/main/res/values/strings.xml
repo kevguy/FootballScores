@@ -8,7 +8,6 @@
     <string name="today">Today</string>
     <string name="yesterday">Yesterday</string>
     <string name="tomorrow">Tomorrow</string>
-    <string name="champions_league">UEFA Champions League</string>
     <string name="bundesliga">Bundesliga</string>
     <string name="premierleague">Premier League</string>
     <string name="primeradivison">Primera Division</string>
@@ -48,6 +47,154 @@
     <string name="a11y_date">Date: <xliff:g id="condition">%l$s</xliff:g></string>
     <string name="a11y_score">Score: <xliff:g id="condition">%l$s</xliff:g></string>
 
+    <!-- League codes -->
+    <string name="bundesliga_1">Bundesliga 1</string>
+    <string name="bundesliga_2">Bundesliga 2</string>
+    <string name="ligue_1">Ligue 1</string>
+    <string name="ligue_2">Ligue 2</string>
+    <string name="premier_league">Premier League</string>
+    <string name="primera_division">Primera Division</string>
+    <string name="segunda_division">Segunda Division</string>
+    <string name="series_a">Seria A</string>
+    <string name="primera_liga">Primera Liga</string>
+    <string name="bundesliga_3">Bundesliga 3</string>
+    <string name="erediviste">Eredivisie</string>
+    <string name="champions_league">UEFA Champions League</string>
+    <string name="league_name_unknown">Not known League Please report</string>
 
+    <!-- Football Club Names -->
+    <string name="arsenal_fc">Arsenal FC</string>
+    <string name="aston_villa_fc">Aston Villa FC</string>
+    <string name="everton_fc">Everton FC</string>
+    <string name="leicester_city_fc">Leicester City FC</string>
+    <string name="liverpool_fc">Liverpool FC</string>
+    <string name="manchester_united_fc">Manchester United FC</string>
+    <string name="newcastle_fc">Newcastle United FC</string>
+    <string name="norwich_city_fc">Norwich City FC</string>
+    <string name="southampton_fc">Southampton FC</string>
+    <string name="stoke_city_fc">Stoke City FC</string>
+    <string name="sunderland_afc">Sunderland AFC</string>
+    <string name="swansea_city_fc">Swansea City FC</string>
+    <string name="tottenham_hotspur_fc">Tottenham Hotspur FC</string>
+    <string name="watford_fc">Watford FC</string>
+    <string name="west_bromwich_albion_fc">West Bromwich Albion FC</string>
+    <string name="west_ham_united_fc">West Ham United FC</string>
+
+    <!-- Not sure if it's the right name, mostly English I guess -->
+    <string name="birmingham_city">Birmingham City</string>
+    <string name="blackburn_rovers">Blackburn Rovers"</string>string>
+    <string name="boltan_wanderers">Boltan Wanderers</string>
+    <string name="burney_fc">Burney FC</string>
+    <string name="cardiff_city">Cardiff City</string>
+    <string name="celtic">Celtic</string>
+    <string name="chelsea_fc">Chelsea FC</string>
+    <string name="coverntry_city">Coverntry City</string>
+    <string name="crystal_palace_fc">Crystal Palace FC</string>
+    <string name="derby_country">Derby Country</string>
+    <string name="england">England</string>
+    <string name="fulham_fc">Fulham FC</string>
+    <string name="glascow_rangers">Glascow Rangers</string>
+    <string name="hearts_fc">Hearts FC</string>
+    <string name="hull_city_afc">Hull City AFC</string>
+    <string name="ipswich_town">Ipswich Town</string>
+    <string name="ireland">Ireland</string>
+    <string name="leeds_united_fc">Leeds United FC</string>
+    <string name="manchester_city_fc">Manchester City FC</string>
+    <string name="middles_brough">Middles Brough</string>
+    <string name="millwall_fc">Millwall FC</string>
+    <string name="northern_ireland">Northern Ireland</string>
+    <string name="nottingham_forest">Nottingham Forest</string>
+    <string name="portsmouth_fc">Portsmouth FC</string>
+    <string name="queens_park_rangers">Queens Park Rangers</string>
+    <string name="reading">Reading</string>
+    <string name="scotland">Scotland</string>
+    <string name="sheffield_wednesday">Sheffield Wednesday</string>
+    <string name="wigan_athletic">Wigan Athletic</string>
+    <string name="wolverhampton_wanderers">Wolverhampton Wanderers</string>
+    <string name="wrexham">Wrexham</string>
+
+    <!-- Deutsch -->
+    <string name="fc_1_koln">1. FC Köln</string>
+    <string name="bayer_leverkusen">Bayer Leverkusen</string>
+    <string name="borussia_dortmund">Borussia Dortmund</string>
+    <string name="bor_monchengladbach">Bor. Mönchengladbach</string>
+    <string name="eintracht_frankfurt">Eintracht Frankfurt</string>
+    <string name="fc_bayern_munchen">FC Bayern München</string>
+    <string name="fc_hansa_rostock">FC Hansa Rostock</string>
+    <string name="fc_schalke_04">FC Schalke 04</string>
+    <string name="hamburger_sv">Hamburger SV</string>
+    <string name="hannover_96">Hannover 96</string>
+    <string name="hertha_bsc">Hertha BSC</string>
+    <string name="vfb_stuttgart">VfB Stuttgart</string>
+    <string name="vfl_wolfsburg">VfL Wolfsburg</string>
+    <string name="werder_breman">Werder Bremen</string>
+
+    <!-- Not sure if it's the right name, mostly Deutsch I guess -->
+    <string name="fc_kaiserslautern">FC Kaiserslautern</string>
+    <string name="fc_nurnberg">FC Nurnberg</string>
+    <string name="germany">Germany</string>
+    <string name="karlsruher_sc">Karlsruher SC</string>
+    <string name="msv_duisburg">MSV Duisburg</string>
+    <string name="vfl_bochum">VfL Bochum</string>
+
+
+    <!-- Italian -->
+    <string name="ac_chievo_verona">AC Chievo Verona</string>
+    <string name="ac_milan">AC Milan</string>
+    <string name="acf_fiorentina">ACF Fiorentina</string>
+    <string name="as_roma">AS Roma</string>
+    <string name="atalanta_bc">Atalanta BC</string>
+    <string name="bologna_fc">Bologna FC</string>
+    <string name="empoli_fc">Empoli FC</string>
+    <string name="fc_internazionale_milano">FC Internazionale Milano</string>
+    <string name="genoa_cfc">Genoa CFC</string>
+    <string name="hellas_verona_fc">Hellas Verona FC</string>
+    <string name="juventus_turin">Juventus Turin</string>
+    <string name="ss_lazio">SS Lazio</string>
+    <string name="ssc_napoli">SSC Napoli</string>
+    <string name="torino_fc">Torino FC</string>
+    <string name="uc_sampdoria">UC Sampdoria</string>
+    <string name="udinese_calcio">Udinese Calcio</string>
+    <string name="us_citta_di_palermo">US Città di Palermo</string>
+
+    <!-- Not sure if it's the right name, mostly Italian I guess -->
+    <string name="ac_cesena">AC Cesena</string>
+    <string name="ac_parma">AC Parma</string>
+    <string name="cagliari">Cagliari</string>
+    <string name="italy">Italy</string>
+    <string name="livorno">Livorno</string>
+    <string name="perugia">Perugia</string>
+    <string name="vicenza">Vicenza</string>
+
+
+    <!-- Spanish -->
+    <string name="club_atletico_de_madrid">Club Atlético de Madrid</string>
+    <string name="fc_barcelona">FC Barcelona</string>
+    <string name="malaga_cf">Málaga CF</string>
+    <string name="rayo_vallecano_de_madrid">Rayo Vallecano de Madrid</string>
+    <string name="rc_celta_de_vigo">RC Celta de Vigo</string>
+    <string name="rc_deportivo_la_coruna">RC Deportivo La Coruna</string>
+    <string name="rcd_espanyol">RCD Espanyol</string>
+    <string name="rcd_mallorca">RCD Mallorca</string>
+    <string name="real_betis">Real Betis</string>
+    <string name="real_madrid_cf">Real Madrid CF</string>
+    <string name="real_oviedo">Real Oviedo</string>
+    <string name="real_sociedad_de_futbol">Real Sociedad de Fútbol</string>
+    <string name="real_valladolia">Real Valladolid</string>
+    <string name="real_zaragoza">Real Zaragoza</string>
+    <string name="sevilla_fc">Sevilla FC</string>
+    <string name="sporting_gijon">Sporting Gijón</string>
+    <string name="valencia_cf">Valencia CF</string>
+    <string name="villareal_cf">Villareal CF</string>
+
+    <!-- Not sure if it's the right name, mostly Spanish I guess -->
+    <string name="athletic_bilbao">Athletic Bilbao</string>
+    <string name="deportivo_alaves">Deportivo Alaves</string>
+    <string name="getafe">Getafe</string>
+    <string name="osasuna">Osasuna</string>
+    <string name="spain_1">Spain 1</string>
+    <string name="spain_2">Spain 2</string>
+    <string name="tenerife">Tenerife</string>
+    <string name="ud_las_palmas">Ud Las Palmas</string>
 
 </resources>

@@ -1,5 +1,7 @@
 package barqsoft.footballscores;
 
+import android.content.res.Resources;
+
 /**
  * Created by yehya khaled on 3/3/2015.
  */
@@ -30,6 +32,23 @@ public class Utilies
     {
         switch (league_num)
         {
+            /*
+            case BUNDESLIGA1 : return Resources.getSystem().getString(R.string.bundesliga_1);
+            case BUNDESLIGA2 : return Resources.getSystem().getString(R.string.bundesliga_2);
+            case LIGUE1 : return Resources.getSystem().getString(R.string.ligue_1);
+            case LIGUE2 : return Resources.getSystem().getString(R.string.ligue_2);
+            case PREMIER_LEAGUE : return Resources.getSystem().getString(R.string.premier_league);
+            case PRIMERA_DIVISION : return Resources.getSystem().getString(R.string.primera_division);
+            case SEGUNDA_DIVISION : return Resources.getSystem().getString(R.string.segunda_division);
+            case SERIE_A : return Resources.getSystem().getString(R.string.series_a);
+            case PRIMERA_LIGA : return Resources.getSystem().getString(R.string.primera_liga);
+            case Bundesliga3 : return Resources.getSystem().getString(R.string.bundesliga_3);
+            case EREDIVISIE : return Resources.getSystem().getString(R.string.erediviste);
+
+            case CHAMPIONS_LEAGUE : return Resources.getSystem().getString(R.string.champions_league);
+            default: return Resources.getSystem().getString(R.string.league_name_unknown);
+            */
+
             case BUNDESLIGA1 : return "Bundesliga 1";
             case BUNDESLIGA2 : return "Bundesliga 2";
             case LIGUE1 : return "Ligue 1";
@@ -44,6 +63,8 @@ public class Utilies
 
             case CHAMPIONS_LEAGUE : return "UEFA Champions League";
             default: return "Not known League Please report";
+
+
         }
     }
     public static String getMatchDay(int match_day,int league_num)
@@ -95,6 +116,7 @@ public class Utilies
         switch (teamname)
         { //This is the set of icons that are currently in the app. Feel free to find and add more
             //as you go.
+
             case "Arsenal FC" : return R.drawable.arsenal;
             case "Aston Villa FC" : return R.drawable.aston_villa;
             case "Everton FC" : return R.drawable.everton_fc_logo1;
@@ -228,9 +250,6 @@ public class Utilies
             case "Spain 2" : return R.drawable.spain_2;
             case "Tenerife" : return R.drawable.tenerife;
             case "Ud Las Palmas" : return R.drawable.ud_las_palmas;
-
-
-
 
 
             default: return R.drawable.no_icon;
