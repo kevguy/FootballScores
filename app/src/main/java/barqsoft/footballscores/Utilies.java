@@ -95,7 +95,7 @@ public class Utilies
         switch (teamname)
         { //This is the set of icons that are currently in the app. Feel free to find and add more
             //as you go.
-            case "Arsenal London FC" : return R.drawable.arsenal;
+            case "Arsenal FC" : return R.drawable.arsenal;
             case "Aston Villa FC" : return R.drawable.aston_villa;
             case "Everton FC" : return R.drawable.everton_fc_logo1;
             case "Leicester City FC" : return R.drawable.leicester_city_fc_hd_logo;
@@ -106,7 +106,7 @@ public class Utilies
             case "Southampton FC" : return R.drawable.southampton_fc;
             case "Stoke City FC" : return R.drawable.stoke_city;
             case "Sunderland AFC" : return R.drawable.sunderland;
-            case "Swansea City" : return R.drawable.swansea_city_afc;
+            case "Swansea City FC" : return R.drawable.swansea_city_afc;
             case "Tottenham Hotspur FC" : return R.drawable.tottenham_hotspur;
             case "Watford FC" : return R.drawable.watford_fc;
             case "West Bromwich Albion FC" : return R.drawable.west_bromwich_albion_hd_logo;
@@ -150,83 +150,85 @@ public class Utilies
             case "Bayer Leverkusen" : return R.drawable.bayer_leverkusen;
             case "Borussia Dortmund" : return R.drawable.borussia_dortmund;
             case "Bor. Mönchengladbach" : return R.drawable.borussia_monchengladbach;
+            case "Eintracht Frankfurt" : return R.drawable.eintracht_frankfurt;
             case "FC Bayern München" : return R.drawable.bayern_munchen;
             case "FC Hansa Rostock" : return R.drawable.hansa_rostock;
+            case "FC Schalke 04" : return R.drawable.schalke_04;
             case "Hamburger SV" : return R.drawable.hamburger_sv;
             case "Hannover 96" : return R.drawable.hannover_96;
             case "Hertha BSC" : return R.drawable.hertha_bsc;
             case "VfB Stuttgart" : return R.drawable.vfb_stuttgart;
+            case "VfL Wolfsburg" : return R.drawable.vfl_wolfsburg;
+            case "Werder Bremen" : return R.drawable.werder_bremen;
 
             // Not sure if it's the right name, mostly Deutsch I guess
-            case "Eintracht Frankfurt" : return R.drawable.eintracht_frankfurt;
             case "FC Kaiserslautern" : return R.drawable.fc_kaiserslautern;
             case "FC Nurnberg" : return R.drawable.fc_nurnberg;
             case "Germany" : return R.drawable.germany;
             case "Karlsruher SC" : return R.drawable.karlsruher_sc;
             case "MSV Duisburg" : return R.drawable.msv_duisburg;
-            case "Schalke 04" : return R.drawable.schalke_04;
             case "VfL Bochum" : return R.drawable.vfl_bochum;
-            case "VfL Wolfsburg" : return R.drawable.vfl_wolfsburg;
-            case "Werder Bremen" : return R.drawable.werder_bremen;
+
 
             // Italian
+            case "AC Chievo Verona" : return R.drawable.chievo_verona;
             case "AC Milan" : return R.drawable.ac_milan;
+            case "ACF Fiorentina" : return R.drawable.fiorentina;
+            case "AS Roma" : return R.drawable.as_roma;
             case "Atalanta BC" : return R.drawable.atalanta;
+            case "Bologna FC" : return R.drawable.bologna;
             case "Empoli FC" : return R.drawable.empoli;
             case "FC Internazionale Milano" : return R.drawable.inter_milan;
+            case "Genoa CFC" : return R.drawable.genoa;
+            case "Hellas Verona FC" : return R.drawable.hellas_verona;
+            case "Juventus Turin" : return R.drawable.juventus;
+            case "SS Lazio" : return R.drawable.ss_lazio;
+            case "SSC Napoli" : return R.drawable.napoli;
             case "Torino FC" : return R.drawable.torino;
+            case "UC Sampdoria" : return R.drawable.sampdoria;
+            case "Udinese Calcio" : return R.drawable.udinese;
+            case "US Città di Palermo" : return R.drawable.palermo;
 
             // Not sure if it's the right name, mostly Italian I guess
             case "AC Cesena" : return R.drawable.ac_cesena;
             case "AC Parma" : return R.drawable.ac_parma;
-            case "AS Roma" : return R.drawable.as_roma;
-            case "Bologna" : return R.drawable.bologna;
             case "Cagliari" : return R.drawable.cagliari;
-            case "Chievo Verona" : return R.drawable.chievo_verona;
-            case "Fiorentina" : return R.drawable.fiorentina;
-            case "Genoa" : return R.drawable.genoa;
-            case "Hellas Verona" : return R.drawable.hellas_verona;
             case "Italy" : return R.drawable.italy;
-            case "Juventus" : return R.drawable.juventus;
             case "Livorno" : return R.drawable.livorno;
-            case "Napoli" : return R.drawable.napoli;
-            case "Palermo" : return R.drawable.palermo;
             case "Perugia" : return R.drawable.perugia;
-            case "Sampdoria" : return R.drawable.sampdoria;
-            case "SS Lazio" : return R.drawable.ss_lazio;
-            case "Udinese" : return R.drawable.udinese;
             case "Vicenza" : return R.drawable.vicenza;
 
 
             // Spanish
+            case "Club Atlético de Madrid" : return R.drawable.atletico_madrid;
             case "FC Barcelona" : return R.drawable.barcelona;
             case "Málaga CF" : return R.drawable.malaga_cf;
             case "Rayo Vallecano de Madrid" : return R.drawable.rayo_vallecano;
+            case "RC Celta de Vigo" : return R.drawable.celta_de_vigo;
+            case "RC Deportivo La Coruna" : return R.drawable.deportivo_la_coruna;
+            case "RCD Espanyol" : return R.drawable.espanyol;
+            case "RCD Mallorca" : return R.drawable.real_mallorca;
+            case "Real Betis" : return R.drawable.real_betis;
+            case "Real Madrid CF" : return R.drawable.real_madrid;
+            case "Real Oviedo" : return R.drawable.real_oviedo;
             case "Real Sociedad de Fútbol" : return R.drawable.real_sociedad;
+            case "Real Valladolid" : return R.drawable.real_valladolid;
+            case "Real Zaragoza" : return R.drawable.real_zaragoza;
+            case "Sevilla FC" : return R.drawable.sevilla;
             case "Sporting Gijón" : return R.drawable.sporting_gijon;
+            case "Valencia CF" : return R.drawable.valencia;
+            case "Villareal CF" : return R.drawable.villareal;
 
             // Not sure if it's the right name, mostly Spanish I guess
             case "Athletic Bilbao" : return R.drawable.athletic_bilbao;
-            case "Atletico Madrid" : return R.drawable.atletico_madrid;
-            case "Celta de Vigo" : return R.drawable.celta_de_vigo;
             case "Deportivo Alaves" : return R.drawable.deportivo_alaves;
-            case "Deportivo la Coruna" : return R.drawable.deportivo_la_coruna;
-            case "Espanyol" : return R.drawable.espanyol;
             case "Getafe" : return R.drawable.getafe;
             case "Osasuna" : return R.drawable.osasuna;
-            case "Real Betis" : return R.drawable.real_betis;
-            case "Real Madrid" : return R.drawable.real_madrid;
-            case "Real Mallorca" : return R.drawable.real_mallorca;
-            case "Real Oviedo" : return R.drawable.real_oviedo;
-            case "Real Valladolid" : return R.drawable.real_valladolid;
-            case "Real Zaragoza" : return R.drawable.real_zaragoza;
-            case "Sevilla" : return R.drawable.sevilla;
             case "Spain 1" : return R.drawable.spain_1;
             case "Spain 2" : return R.drawable.spain_2;
             case "Tenerife" : return R.drawable.tenerife;
             case "Ud Las Palmas" : return R.drawable.ud_las_palmas;
-            case "Valencia" : return R.drawable.valencia;
-            case "Villareal" : return R.drawable.villareal;
+
 
 
 
