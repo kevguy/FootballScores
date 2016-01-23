@@ -75,7 +75,7 @@ public class TodayWidgetIntentService extends IntentService {
 
         int today = 0;
         // FInd tomorrow's date
-        Date orgfragmentdate = new Date(System.currentTimeMillis()+((today+1)*86400000));
+        Date orgfragmentdate = new Date(System.currentTimeMillis()+((today+0)*86400000));
         SimpleDateFormat mformat = new SimpleDateFormat("yyyy-MM-dd");
         setFragmentDate(mformat.format(orgfragmentdate));
 
@@ -107,8 +107,8 @@ public class TodayWidgetIntentService extends IntentService {
 
         // Extract the score data from the Cursor
         int scoreId = data.getInt(INDEX_MATCH_ID);
-        int scoreArtResourceId = R.drawable.ic_launcher;
-        String description = "fuck " + Utilies.getLeague(Integer.parseInt(data.getString(INDEX_LEAGUE)));
+        int scoreArtResourceId = Utilies.getTeamCrestByTeamName(data.getString(INDEX_HOME));
+        String description = Utilies.getLeague(Integer.parseInt(data.getString(INDEX_LEAGUE)));
         String homeTeam = data.getString(INDEX_HOME);
         String wayTeam = data.getString(INDEX_AWAY);
         data.close();
