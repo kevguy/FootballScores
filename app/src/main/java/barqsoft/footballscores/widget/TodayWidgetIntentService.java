@@ -107,8 +107,8 @@ public class TodayWidgetIntentService extends IntentService {
 
         // Extract the score data from the Cursor
         int scoreId = data.getInt(INDEX_MATCH_ID);
-        int scoreArtResourceId = R.drawable.liverpool;
-        String description = "fuck " + data.getString(INDEX_LEAGUE);
+        int scoreArtResourceId = R.drawable.ic_launcher;
+        String description = "fuck " + Utilies.getLeague(Integer.parseInt(data.getString(INDEX_LEAGUE)));
         String homeTeam = data.getString(INDEX_HOME);
         String wayTeam = data.getString(INDEX_AWAY);
         data.close();
